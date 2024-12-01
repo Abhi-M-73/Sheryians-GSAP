@@ -1,0 +1,32 @@
+note 1= initial position se final position tak le jane ke liye .to ka use karte hai 
+note 2=final se initial ke liye lane ke liye .from ka use karte hai 
+
+properties=====>
+
+x =x axis without pixel
+y= y axis without pixel
+duration = number only in second
+delay = same to duration
+rotate=degree me lekin only number 
+
+
+!!! css ki property use kar sakte hai lekin camal case me  
+
+note = koi bhi css ki property ke value ko string me our spacial character ko string me 
+
+stagger : 1 , karne se ek type ke sare tag ek ek karke chalenge 
+yoyo : true  , tab kam karegi jab appko kisi chiz ko tappa khawakar wapis karna ho repeat me 
+
+
+scrollTrigger :{
+    trigger:"#box2 #box",
+    scroller:"body" (maximum time yahi rahega),
+    markers:true,
+    start : "top 50%"
+}
+
+
+!!! lecture three
+
+svg path curve website
+power easing website
