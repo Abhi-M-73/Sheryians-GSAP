@@ -152,7 +152,22 @@ body {
 .course-card button:hover {
   background-color: #141414;
 }
-.section {
+
+.text-slide {
   height: 100vh;
-  width: 100vw;
+  width: 200vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
+
+.text-slide > h1 {
+  font-size: 28rem;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  color: #1c223f;
+}
+

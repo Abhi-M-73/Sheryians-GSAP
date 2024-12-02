@@ -56,3 +56,15 @@ gsap.from(".course-card", {
   },
 })
 
+gsap.to(".text-slide h1", {
+  x: "-255vw", // Move out of view to the left
+  scrollTrigger: {
+    trigger: ".text-slide",
+    start: "top top", // Start pinning when the section reaches the top
+    end: "+=200%",    // Keep the section pinned for 2x the viewport height
+    scrub: true,      // Smooth scrolling
+    pin: true,        // Pin the section during the animation
+    // markers: true,    // Enable markers for debugging (remove in production)
+  }
+});
+
