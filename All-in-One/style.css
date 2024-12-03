@@ -20,6 +20,10 @@ body {
   color: #fff;
 }
 
+.navbar > i {
+  display: none;
+}
+
 .itmes {
   display: flex;
   gap: 40px;
@@ -170,4 +174,3 @@ body {
   left: 0;
   color: #1c223f;
 }
-
