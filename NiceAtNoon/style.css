@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: larken;
+    src: url(./LarkenDEMO-Bold.otf);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #e4e4e4;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn > button{
+    padding: 0.6rem 1rem;
+    border: 1px solid black;
+    background: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.25s;
+}
+
+.nav-btn > button:last-child{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.nav-btn > button:hover{
+    background-color: black;
+    color: white;
+}
+
+.circle-logo{
+    animation: rotate 10s linear infinite ;
+}
+
+@keyframes rotate {
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.heading-section{
+    width: 100%;
+    padding: 2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-section-left{
+    width: 80%;
+
+    & h1{
+        font-size: 7rem;
+        line-height: 6.5rem;
+        font-family: larken;
+        font-weight: 100;
+    }
+}
+
+.heading-section-right{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2rem;
+
+    & p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+
+    & .right-btn{
+        width: fit-content;
+        background-color: #f4f4f1;
+        padding: 1rem 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        gap: 1rem;
+    }
+
+    & .right-btn:hover{
+        border-radius: 30px;
+        text-decoration: underline;
+    }
+}
