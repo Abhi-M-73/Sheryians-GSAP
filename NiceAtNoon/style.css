@@ -1,111 +1,138 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: larken;
-    src: url(./LarkenDEMO-Bold.otf);
+  font-family: larken;
+  src: url(./LarkenDEMO-Bold.otf);
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-    background-color: #e4e4e4;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #e4e4e4;
+  overflow-x: hidden;
 }
 
-.page1{
-    height: 100vh;
-    width: 100%;
+main {
+  min-height: 100vh;
+  width: 100%;
 }
 
-nav{
-    padding: 1rem 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav {
+  padding: 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav .nav-btn {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-.nav-btn > button{
-    padding: 0.6rem 1rem;
-    border: 1px solid black;
-    background: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.25s;
+.nav-btn > button {
+  padding: 0.6rem 1rem;
+  border: 1px solid black;
+  background: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.25s;
 }
 
-.nav-btn > button:last-child{
-    text-decoration: underline;
-    font-weight: 700;
+.nav-btn > button:last-child {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
-.nav-btn > button:hover{
-    background-color: black;
-    color: white;
+.nav-btn > button:hover {
+  background-color: black;
+  color: white;
 }
 
-.circle-logo{
-    animation: rotate 10s linear infinite ;
+.circle-logo {
+  animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
-    100%{
-        rotate: 360deg;
-    }
+  100% {
+    rotate: 360deg;
+  }
 }
 
-.heading-section{
-    width: 100%;
-    padding: 2rem 2.5rem;
+.hero-section {
+  width: 100%;
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section-left {
+  width: 80%;
+
+  & h1 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+    font-family: larken;
+    font-weight: 100;
+  }
+}
+
+.hero-section-right {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 2rem;
+
+  & p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+
+  & .right-btn {
+    width: fit-content;
+    background-color: #f4f4f1;
+    padding: 1rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  & .right-btn:hover {
+    border-radius: 30px;
+    text-decoration: underline;
+  }
 }
 
-.heading-section-left{
-    width: 80%;
-
-    & h1{
-        font-size: 7rem;
-        line-height: 6.5rem;
-        font-family: larken;
-        font-weight: 100;
-    }
+.slider-section {
+  width: 200vw; /* Enough width for all slides to be in a single row */
+  display: flex; /* Align slides horizontally */
+  gap: 1.5rem; /* Spacing between slides */
+  padding: 4rem 0; /* Top and bottom padding */
 }
 
-.heading-section-right{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 2rem;
+.slide {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 25vw; /* Each slide is 20% of the viewport width */
+  height: 60vh; /* Adjust height as needed */
+}
 
-    & p{
-        font-size: 1.2rem;
-        font-weight: 500;
-        font-family: sans-serif;
-    }
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fill the slide area */
+  border-radius: 15px; /* Rounded corners */
+}
 
-    & .right-btn{
-        width: fit-content;
-        background-color: #f4f4f1;
-        padding: 1rem 1rem;
-        font-weight: 600;
-        font-size: 1rem;
-        border: none;
-        border-radius: 10px;
-        display: flex;
-        gap: 1rem;
-    }
-
-    & .right-btn:hover{
-        border-radius: 30px;
-        text-decoration: underline;
-    }
+.th {
+  height: 100vh;
+  width: 100%;
 }
